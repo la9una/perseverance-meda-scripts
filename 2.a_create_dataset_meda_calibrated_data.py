@@ -5,9 +5,9 @@ from tqdm import tqdm
 
 # ---
 
-## 1. Configuración inicial y almacenamiento de datos 📂
+## 1. Configuración inicial y almacenamiento de datos 
 
-# Aquí defines la ruta a la carpeta principal de los datos calibrados.
+# Definimos la ruta a la carpeta principal de los datos calibrados.
 base_path = 'data_calibrated_env' 
 output_file = 'dataset_meda_calibrated_data.csv'
 BATCH_SIZE = 50
@@ -15,7 +15,7 @@ header_written = False
 
 # ---
 
-## 2. Búsqueda y consolidación por lotes ❤️
+## 2. Búsqueda y consolidación por lotes 
 
 print("Paso 1: Buscando todos los archivos de datos.")
 
@@ -77,6 +77,6 @@ else:
 
 # ---
 
-## 3. Mensaje final 🎉
+## 3. Mensaje final
 
 print("\n¡Dataset consolidado creado exitosamente! 🎉")

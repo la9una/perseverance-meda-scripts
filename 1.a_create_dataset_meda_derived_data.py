@@ -9,18 +9,18 @@ from tqdm import tqdm
 """
 ## 1. Configuración inicial para lotes
 """
-# Aquí defines la ruta a la carpeta principal de los datos derivados.
+# Definimos la ruta a la carpeta principal de los datos derivados.
 base_path = 'data_derived_env'
 
-# --- NUEVA CONFIGURACIÓN PARA LOTES ---
+# --- CONFIGURACIÓN PARA LOTES ---
 # Nombre del archivo final que se creará.
 output_file = 'dataset_meda_derived_data.csv'
 # Número de archivos de "sol" a procesar en cada lote.
-# Puedes ajustar este número según la RAM de tu equipo. 50 es un valor seguro.
+# Ajustar este número según la RAM de tu equipo. 50 es un valor seguro.
 BATCH_SIZE = 50
 # Bandera para asegurarnos de que el encabezado se escriba solo una vez.
 header_written = False
-# --- FIN DE LA NUEVA CONFIGURACIÓN ---
+# --- FIN DE CONFIGURACIÓN ---
 
 """
 ## 2. Búsqueda y consolidación por lotes
@@ -38,7 +38,7 @@ else:
     print(f"Búsqueda completa. Se encontraron {total_files} archivos ANCILLARY.")
     print("Paso 2: Iniciando el procesamiento por lotes. Esto demorará algunos minutos...")
 
-    # --- NUEVO BUCLE PRINCIPAL POR LOTES ---
+    # --- BUCLE PRINCIPAL POR LOTES ---
     # Este bucle itera sobre la lista de archivos en trozos del tamaño de BATCH_SIZE.
     for i in tqdm(range(0, total_files, BATCH_SIZE), desc="Procesando lotes"):
         batch_files = all_ancillary_files[i:i + BATCH_SIZE]
@@ -47,7 +47,7 @@ else:
         # Este bucle interno procesa cada archivo dentro del lote actual.
         for file_path in batch_files:
             try:
-                # --- El código de procesamiento de un sol individual se mantiene igual ---
+                # --- Código de procesamiento para cada sol individual ---
                 df_ancillary = pd.read_csv(file_path)
                 sol_number = os.path.basename(file_path).split('__')[1]
                 sol_path = os.path.dirname(file_path)
@@ -98,7 +98,7 @@ else:
             except Exception as e:
                 tqdm.write(f"Error al procesar el archivo {file_path}: {e}")
 
-        # --- NUEVO BLOQUE DE ESCRITURA POR LOTES ---
+        # --- ESCRITURA POR LOTES ---
         # Al final de cada lote, si hemos procesado datos, los escribimos en el CSV.
         if list_of_batch_dfs:
             batch_df = pd.concat(list_of_batch_dfs, ignore_index=True)

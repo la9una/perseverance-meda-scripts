@@ -61,20 +61,20 @@ primer_lote_transformado = transformar_lote_calibrado(primer_lote)
 writer = pq.ParquetWriter(OUTPUT_PARQUET, schema=pa.Table.from_pandas(primer_lote_transformado).schema)
 writer.write_table(pa.Table.from_pandas(primer_lote_transformado))
 
-# --- INICIO DE LA CORRECCIÓN FINAL ---
+# --- ESQUEMA MAESTRO ---
 # Guardamos el esquema maestro para usarlo como plantilla
 master_schema = writer.schema
-# --- FIN DE LA CORRECCIÓN FINAL ---
+# --- FIN DEL ESQUEMA MAESTRO ---
 
 print("Procesando el resto de los lotes...")
 for lote in tqdm(csv_iter):
     lote_transformado = transformar_lote_calibrado(lote)
     
-    # --- CAMBIO CLAVE ---
+    # --- CONVERSION A PYARROW ---
     # Convertimos el DataFrame a una Tabla de PyArrow, forzando el uso del esquema maestro.
     tabla_lote = pa.Table.from_pandas(lote_transformado, schema=master_schema)
     writer.write_table(tabla_lote)
-    # --- FIN DEL CAMBIO ---
+    # --- FIN DE CONVERSION ---
 
 writer.close()
 print(f"¡Proceso completado! Archivo optimizado guardado en: '{OUTPUT_PARQUET}'")

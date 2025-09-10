@@ -9,7 +9,7 @@ INPUT_CSV = 'dataset_meda_derived_data.csv'
 OUTPUT_PARQUET = 'dataset_meda_derived_data.parquet'
 CHUNK_SIZE = 1_000_000 # Procesamos en lotes de 1 millón de filas
 
-# --- 2. FUNCIÓN DE TRANSFORMACIÓN (CORREGIDA OTRA VEZ) ---
+# --- 2. FUNCIÓN DE TRANSFORMACIÓN ---
 def transformar_lote(df):
     # Convertir LTST a datetime
     if 'LTST' in df.columns:
@@ -20,17 +20,15 @@ def transformar_lote(df):
     # Manejamos 'sol' explícitamente para asegurar consistencia.
     if 'sol' in df.columns:
         df['sol'] = df['sol'].fillna(-1).astype('int16')
-
-    # --- INICIO DE LA NUEVA CORRECCIÓN PARA 'WIND_DIRECTION' ---
+        
     # Forzamos que WIND_DIRECTION sea siempre float para manejar los NaN.
     if 'WIND_DIRECTION' in df.columns:
         df['WIND_DIRECTION'] = df['WIND_DIRECTION'].astype('float32')
-    # --- FIN DE LA NUEVA CORRECCIÓN ---
 
-    # Optimizar el resto de los tipos de datos numéricos y enteros
+
+    # Optimizamos el resto de los tipos de datos numéricos y enteros
     for col in df.columns:
-        # La columna WIND_DIRECTION ya fue manejada, así que el resto de los floats
-        # pueden ser procesados de forma segura.
+
         if df[col].dtype == 'float64':
             df[col] = df[col].astype('float32')
         elif df[col].dtype == 'int64':
