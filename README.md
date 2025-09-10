@@ -26,12 +26,29 @@ perseverance-meda-scripts/
 └── 2.b_optimize_dataset_meda_calibrated_data.py
 ```
 
-- **`requirements.txt`**: Archivo que especifica las librerías de Python necesarias para la ejecución del proyecto.
-- **`1.a_create_dataset_meda_derived_data.py`**: Consolida los datos diarios "Derived" en un único archivo CSV masivo.
-- **`1.b_optimize_dataset_meda_derived_data.py`**: Optimiza el CSV "Derived" a formato Parquet, aplicando limpieza y corrección de tipos.
-- **`2.a_create_dataset_meda_calibrated_data.py`**: Consolida los datos diarios "Calibrated" en un único archivo CSV masivo.
-- **`2.b_optimize_dataset_meda_calibrated_data.py`**: Optimiza el CSV "Calibrated" a formato Parquet.
-- **`.gitignore`**: Archivo de configuración para que Git ignore directorios y archivos específicos.
+- **`requirements.txt`** 
+
+  Archivo que especifica las librerías de Python necesarias para la ejecución del proyecto.
+
+- **`1.a_create_dataset_meda_derived_data.py`**
+
+  Consolida los datos diarios "Derived" en un único archivo CSV masivo.
+
+- **`1.b_optimize_dataset_meda_derived_data.py`**
+
+  Optimiza el CSV "Derived" a formato Parquet, aplicando limpieza y corrección de tipos.
+
+- **`2.a_create_dataset_meda_calibrated_data.py`**
+
+  Consolida los datos diarios "Calibrated" en un único archivo CSV masivo.
+
+- **`2.b_optimize_dataset_meda_calibrated_data.py`**
+
+  Optimiza el CSV "Calibrated" a formato Parquet.
+
+- **`.gitignore`**
+
+  Archivo de configuración para que Git ignore directorios y archivos específicos.
 
 
 
