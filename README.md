@@ -4,6 +4,10 @@
 
 Este repositorio contiene un conjunto de scripts desarrollados en Python para el procesamiento de datos del instrumento [MEDA (Mars Environmental Dynamics Analyzer)](https://pds-atmospheres.nmsu.edu/data_and_services/atmospheres_data/PERSEVERANCE/meda.html), a bordo del rover Perseverance de la NASA. El proyecto, que constituye un anexo de la monografía final de la materia **Astronomía II** (cátedra [Prof. Sergio R. Stürtz](https://www.linkedin.com/in/sergio-r-st%C3%BCrtz-422799249), del Profesorado en Física con sede en el  [Instituto Superior de Formación Docente ISFD N° 102 "Antonio Mentruyt" de Banfield, Lomas de Zamora, Buenos Aires, Argentina"](https://isfd102-bue.infd.edu.ar/sitio/)), tiene como objetivo consolidar y optimizar los miles de archivos de datos diarios provenientes del [NASA Planetary Data System (PDS)](https://pds.nasa.gov/) en dos datasets maestros, depurados y eficientes, listos para su posterior análisis científico.
 
+![](/home/raulito/Escritorio/perseverance-meda-scripts/img/rover_perseverance.png)
+
+
+
 
 ## Nota importante sobre los datos
 
