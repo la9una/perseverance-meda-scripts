@@ -81,8 +81,9 @@ pip install -r requirements.txt
 
 ## Flujo de trabajo
 
-
 El proceso se divide en dos pipelines independientes, uno para cada tipo de dato.
+
+⚠️ **Advertencia:** Este proceso es computacionalmente intensivo. Se recomienda un equipo con un mínimo de **8 GB de RAM** y un procesador **Intel Core i3 / AMD Ryzen 3** o superior.
 
 
 
@@ -101,7 +102,6 @@ python 1.a_create_dataset_meda_derived_data.py
 
 - **Entrada:** Directorio `data_derived_env/`.
 - **Salida:** Un archivo CSV masivo (ej: `dataset_meda_derived_data.csv`).
-- ⚠️ **Advertencia:** Este proceso es computacionalmente intensivo. Se recomienda un equipo con un mínimo de **8 GB de RAM** y un procesador **Intel Core i3 / AMD Ryzen 3** o superior.
 
 
 
