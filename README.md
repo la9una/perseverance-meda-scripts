@@ -2,7 +2,8 @@
 
 
 
-Este repositorio contiene un conjunto de scripts desarrollados en Python para el procesamiento de datos del instrumento **MEDA (Mars Environmental Dynamics Analyzer)**, a bordo del rover Perseverance de la NASA. El objetivo es consolidar y optimizar los miles de archivos de datos diarios, provenientes del **NASA Planetary Data System (PDS)**, en dos datasets maestros, depurados y eficientes, listos para su posterior análisis científico.
+Este repositorio contiene un conjunto de scripts desarrollados en Python para el procesamiento de datos del instrumento **MEDA (Mars Environmental Dynamics Analyzer)**, a bordo del rover Perseverance de la NASA. El proyecto, que constituye un anexo de la monografía final de la materia **Astronomía II** (cátedra [Prof. Sergio R. Stürtz](https://www.linkedin.com/in/sergio-r-st%C3%BCrtz-422799249), del Profesorado en Física con sede en el  [ISFD N° 102](https://isfd102-bue.infd.edu.ar/sitio/)), tiene como objetivo consolidar y optimizar los miles de archivos de datos diarios provenientes del **NASA Planetary Data System (PDS)** en dos datasets maestros, depurados y eficientes, listos para su posterior análisis científico.
+
 
 
 
