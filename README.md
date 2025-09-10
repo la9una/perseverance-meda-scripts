@@ -42,9 +42,9 @@ perseverance-meda-scripts/
 
 1. **Python 3.9+**
 2. **Datos de MEDA**:
-   - Es necesario descargar los conjuntos de datos desde el portal oficial del [NASA PDS](https://pds-atmospheres.nmsu.edu/PDS/data/PDS4/Mars2020/mars2020_meda/):
-     - **"Derived"** (`meda_derived.tar.gz` 3,2 GB)
-     - **"Calibrated"** (`meda_calibrated.tar.gz` 10,7 GB)
+   - Es necesario descargar los conjuntos de datos desde el portal oficial del [NASA PDS](https://pds-atmospheres.nmsu.edu/PDS/data/PDS4/Mars2020/):
+     - **"Derived"** (`meda_derived.tar.gz` 2,9 GB)
+     - **"Calibrated"** (`meda_calibrated.tar.gz` 10,0 GB)
    - Una vez descomprimidos (los archivos `.tar.gz`), los directorios deben ser ubicados en la raíz del proyecto, conservando la siguiente estructura:
 
 ```cmd
@@ -60,19 +60,24 @@ perseverance-meda-scripts/
 ## Instalación
 
 1. Clone el repositorio en su sistema local.
+
+```bash
+git clone https://github.com/la9una/perseverance-meda-scripts.git
+```
+
 2. Se recomienda la creación de un entorno virtual para gestionar las dependencias:
 
-   ```bash
-   python -m venv mars
-   ```
+```bash
+python -m venv mars
+```
 3. Active el entorno virtual:
    - En Linux/macOS: `source mars/bin/activate`
    - En Windows: `mars\Scripts\activate`
 
 4. Instale las dependencias especificadas mediante el siguiente comando:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 
 
