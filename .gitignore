@@ -1,4 +1,18 @@
+# Entorno Virtual
+mars/
+venv/
+
+# Directorios de Datos Crudos
 data_calibrated_env/
 data_derived_env/
-meda_calibrated.tar.gz
-meda_derived.tar.gz
+
+# Archivos de Datos Comprimidos
+*.tar.gz
+
+# Archivos de Datos Generados
+*.csv
+*.parquet
+
+# Caché y artefactos de Python
+__pycache__/
+*.pyc
