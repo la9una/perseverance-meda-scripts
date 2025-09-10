@@ -128,7 +128,7 @@ python 1.a_create_dataset_meda_derived_data.py
 ```
 
 - **Entrada:** Directorio `data_derived_env/`.
-- **Salida:** Un archivo CSV masivo (ej: `dataset_meda_derived_data.csv`).
+- **Salida:** Un archivo CSV masivo (`dataset_meda_derived_data.csv`).
 
 
 
@@ -140,7 +140,7 @@ python 1.b_optimize_dataset_meda_derived_data.py
 ```
 
 - **Entrada:** El archivo CSV generado en el paso anterior.
-- **Salida:** `meda_derived_clean.parquet`.
+- **Salida:** `dataset_meda_derived_data.parquet`.
 
 
 
@@ -158,7 +158,7 @@ python 2.a_create_dataset_meda_calibrated_data.py
 ```
 
 - **Entrada:** Directorio `data_calibrated_env/`.
-- **Salida:** Un archivo CSV masivo (ej: `meda_calibrated_consolidado.csv`).
+- **Salida:** Un archivo CSV masivo (`dataset_meda_calibrated_data.csv`).
 
 
 
@@ -170,7 +170,7 @@ python 2.b_optimize_dataset_meda_calibrated_data.py
 ```
 
 - **Entrada:** El archivo CSV generado en el paso 2.a.
-- **Salida:** `meda_calibrated_clean.parquet`.
+- **Salida:** `dataset_meda_calibrated_data.parquet`.
 
 
 
