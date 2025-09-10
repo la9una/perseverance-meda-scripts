@@ -83,7 +83,16 @@ pip install -r requirements.txt
 
 El proceso se divide en dos pipelines independientes, uno para cada tipo de dato.
 
-⚠️ **Advertencia:** Este proceso es computacionalmente intensivo. Se recomienda un equipo con un mínimo de **12 GB de RAM** y un procesador **Intel Core i3 / AMD Ryzen 3** o superior.
+
+
+⚠️ **Advertencia:**
+
+Este proceso es computacionalmente intensivo. Se recomienda un equipo con un mínimo de **12 GB de RAM** y un procesador **Intel Core i3 / AMD Ryzen 3** o superior.
+
+
+
+✅ **Resultado** 
+Al finalizar ambos pipelines, la etapa de ingeniería de datos estará completa y los archivos Parquet están listos para el análisis.
 
 
 
@@ -144,7 +153,6 @@ python 2.b_optimize_dataset_meda_calibrated_data.py
 
 - **Entrada:** El archivo CSV generado en el paso 2.a.
 - **Salida:** `meda_calibrated_clean.parquet`.
-- ✅ **Resultado:** Al finalizar ambos pipelines, la etapa de ingeniería de datos está completa y los archivos Parquet están listos para el análisis.
 
 
 
