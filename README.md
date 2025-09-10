@@ -180,20 +180,20 @@ A continuación, se presenta un inventario de los principales archivos del proye
 
 
 
-| RECURSO                                         | TIPO                            | TAMAÑO  | DESCRIPCIÓN                                                              |
-| ----------------------------------------------- | ------------------------------- | ------- | ------------------------------------------------------------------------ |
-| `meda_derived.tar.gz`                           | Archivo comprimido              | 3,2 GB  | Colección de datos derivados, tal como fue descargada de la NASA.          |
-| `data_derived_env/`                             | Carpeta con archivos originales | 20,1 GB | Datos brutos. Contiene 13.261 archivos organizados por soles.            |
-| `1.a_create_dataset_meda_derived_data.py`       | Script Python                   | 5,5 KB  | Consolida los datos de `data_derived_env` en un único dataset CSV.       |
-| `dataset_meda_derived_data.csv`                 | Archivo de datos consolidados   | 4,7 GB  | Dataset unificado de todos los datos derivados.                          |
-| `1.b_optimize_dataset_meda_derived_data.py`     | Script Python                   | 2,8 KB  | Optimiza el CSV de datos derivados a formato Parquet.                    |
-| `meda_derived_clean.parquet`                    | Archivo de datos optimizados    | 794 MB  | Versión final, comprimida y eficiente del dataset derivado.              |
-| `meda_calibrated.tar.gz`                        | Archivo comprimido              | 10,7 GB | Colección de datos calibrados, tal como fue descargada de la NASA.         |
-| `data_calibrated_env/`                          | Carpeta con archivos originales | 51,9 GB | Datos brutos. Contiene 18.913 archivos organizados por soles.            |
-| `2.a_create_dataset_meda_calibrated_data.py`    | Script Python                   | 2,9 KB  | Consolida los datos de `data_calibrated_env` en un único dataset CSV.    |
-| `dataset_meda_calibrated_data.csv`              | Archivo de datos consolidados   | 20,7 GB | Dataset unificado de los datos de los sensores ATS y RDS.                |
-| `2.b_optimize_dataset_meda_calibrated_data.py`  | Script Python                   | 2,9 KB  | Optimiza el CSV de datos calibrados a formato Parquet.                   |
-| `meda_calibrated_clean.parquet`                 | Archivo de datos optimizados    | 5,3 GB  | Versión final, comprimida y eficiente del dataset calibrado.             |
+| RECURSO                                        | TIPO                            | TAMAÑO  | DESCRIPCIÓN                                                  |
+| ---------------------------------------------- | ------------------------------- | ------- | ------------------------------------------------------------ |
+| `meda_derived.tar.gz`                          | Archivo comprimido              | 2,9 GB  | Colección de datos derivados, tal como fue descargada de la NASA. |
+| `data_derived_env/`                            | Carpeta con archivos originales | 20,1 GB | Datos brutos. Contiene 13.261 archivos organizados por soles. |
+| `1.a_create_dataset_meda_derived_data.py`      | Script Python                   | 5,5 KB  | Consolida los datos de `data_derived_env` en un único dataset CSV. |
+| `dataset_meda_derived_data.csv`                | Archivo de datos consolidados   | 4,7 GB  | Dataset unificado de todos los datos derivados.              |
+| `1.b_optimize_dataset_meda_derived_data.py`    | Script Python                   | 2,8 KB  | Optimiza el CSV de datos derivados a formato Parquet.        |
+| `meda_derived_clean.parquet`                   | Archivo de datos optimizados    | 794 MB  | Versión final, comprimida y eficiente del dataset derivado.  |
+| `meda_calibrated.tar.gz`                       | Archivo comprimido              | 10,7 GB | Colección de datos calibrados, tal como fue descargada de la NASA. |
+| `data_calibrated_env/`                         | Carpeta con archivos originales | 51,9 GB | Datos brutos. Contiene 18.913 archivos organizados por soles. |
+| `2.a_create_dataset_meda_calibrated_data.py`   | Script Python                   | 2,9 KB  | Consolida los datos de `data_calibrated_env` en un único dataset CSV. |
+| `dataset_meda_calibrated_data.csv`             | Archivo de datos consolidados   | 20,7 GB | Dataset unificado de los datos de los sensores ATS y RDS.    |
+| `2.b_optimize_dataset_meda_calibrated_data.py` | Script Python                   | 2,9 KB  | Optimiza el CSV de datos calibrados a formato Parquet.       |
+| `meda_calibrated_clean.parquet`                | Archivo de datos optimizados    | 5,3 GB  | Versión final, comprimida y eficiente del dataset calibrado. |
 
 
 
