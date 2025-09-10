@@ -85,13 +85,14 @@ El proceso se divide en dos pipelines independientes, uno para cada tipo de dato
 
 
 
-⚠️ **Advertencia:**
+⚠️ **Advertencia**
 
 Este proceso es computacionalmente intensivo. Se recomienda un equipo con un mínimo de **12 GB de RAM** y un procesador **Intel Core i3 / AMD Ryzen 3** o superior.
 
 
 
 ✅ **Resultado** 
+
 Al finalizar ambos pipelines, la etapa de ingeniería de datos estará completa y los archivos Parquet están listos para el análisis.
 
 
