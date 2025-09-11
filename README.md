@@ -56,11 +56,11 @@ perseverance-meda-scripts/
 
 - **`3_show_headers.py`**
 
-Script de utilidad para inspeccionar rápidamente las cabeceras y tipos de datos de los archivos Parquet generados.
+  Script de utilidad para inspeccionar rápidamente las cabeceras y tipos de datos de los archivos Parquet generados.
 
 - **`graph_*.ipynb`**
 
-Serie de Jupyter Notebooks que contienen el código para realizar los análisis y generar los gráficos finales de la monografía.
+  Serie de Jupyter Notebooks que contienen el código para realizar los análisis y generar los gráficos finales de la monografía.
 
 - **`.gitignore`**
 
