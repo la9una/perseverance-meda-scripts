@@ -27,8 +27,12 @@ perseverance-meda-scripts/
 ├── 1.a_create_dataset_meda_derived_data.py
 ├── 1.b_optimize_dataset_meda_derived_data.py
 ├── 2.a_create_dataset_meda_calibrated_data.py
-└── 2.b_optimize_dataset_meda_calibrated_data.py
+├── 2.b_optimize_dataset_meda_calibrated_data.py
+├── 3_show_headers.py
+└── graph_*.ipynb
 ```
+
+
 
 - **`requirements.txt`** 
 
@@ -49,6 +53,14 @@ perseverance-meda-scripts/
 - **`2.b_optimize_dataset_meda_calibrated_data.py`**
 
   Optimiza el CSV "Calibrated" a formato Parquet.
+
+- **`3_show_headers.py`**
+
+Script de utilidad para inspeccionar rápidamente las cabeceras y tipos de datos de los archivos Parquet generados.
+
+- **`graph_*.ipynb`**
+
+Serie de Jupyter Notebooks que contienen el código para realizar los análisis y generar los gráficos finales de la monografía.
 
 - **`.gitignore`**
 
