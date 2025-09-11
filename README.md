@@ -108,7 +108,7 @@ El proceso se divide en dos pipelines independientes, uno para cada tipo de dato
 
 ⚠️ **Advertencia**
 
-Este proceso es computacionalmente intensivo. Se recomienda un equipo con un mínimo de **12 GB de RAM** y un procesador **Intel Core i3 / AMD Ryzen 3** o superior.
+Este proceso es computacionalmente intensivo. Se recomienda un equipo con un mínimo de **32 GB de RAM** y un procesador **Intel Core i5 / AMD Ryzen 5** o superior.
 
 
 

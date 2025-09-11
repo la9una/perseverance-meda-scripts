@@ -6,6 +6,9 @@ venv/
 data_calibrated_env/
 data_derived_env/
 
+# Directorios ocultos
+.ipynb_checkpoints
+
 # Archivos de Datos Comprimidos
 *.tar.gz
 
